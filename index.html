@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cholados Ice | Ensaladas de Frutas en Bogota</title>
+  <meta name="description" content="Landing innovadora de Cholados Ice. Ensaladas de frutas, cholados y pedidos por WhatsApp en Bogota.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-orb bg-orb-a"></div>
+  <div class="bg-orb bg-orb-b"></div>
+  <div class="bg-grid"></div>
+
+  <header class="header">
+    <a href="#inicio" class="brand">CHOLADOS ICE</a>
+    <nav class="nav">
+      <a href="#menu">Menu</a>
+      <a href="#promos">Promos</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="#ubicacion">Ubicacion</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <a class="btn btn-small" href="https://wa.me/573216567202" target="_blank" rel="noopener">Pedir ahora</a>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero reveal">
+      <div class="hero-text">
+        <p class="hero-kicker">Bogota | Kennedy</p>
+        <h1>
+          Fruta fresca, hielo brutal y
+          <span>sabor que rompe la rutina.</span>
+        </h1>
+        <p class="hero-copy">
+          En <strong>Cholados Ice</strong> mezclamos ensaladas de frutas, cholados y toppings para que cada vaso sea una experiencia.
+        </p>
+        <div class="hero-cta">
+          <a class="btn" href="https://wa.me/573216567202" target="_blank" rel="noopener">WhatsApp directo</a>
+          <a class="btn btn-ghost" href="tel:+573216567202">Llamar</a>
+        </div>
+        <div class="hero-badges">
+          <span class="badge">Horarios amplios</span>
+          <span class="badge">Entrega local</span>
+          <span class="badge">Personalizable</span>
+        </div>
+        <div class="hero-metrics">
+          <article>
+            <p class="metric-value">+1200</p>
+            <p class="metric-label">Pedidos por mes</p>
+          </article>
+          <article>
+            <p class="metric-value">4.9/5</p>
+            <p class="metric-label">Calificacion clientes</p>
+          </article>
+          <article>
+            <p class="metric-value">20-35 min</p>
+            <p class="metric-label">Entrega estimada</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">Menu actual</p>
+        <h2>Elige tu ensalada y paga rapido</h2>
+      </div>
+      <div class="checkout-layout">
+        <div class="shop-panel">
+          <h3 class="panel-title">Selecciona tus productos</h3>
+          <div id="menu-items" class="shop-grid stagger"></div>
+        </div>
+        <aside class="checkout-panel">
+          <h3 class="panel-title">Pasarela express</h3>
+          <p class="pay-subtitle">Revisa tu pedido y finaliza por WhatsApp.</p>
+          <ul id="cart-list" class="cart-list"></ul>
+          <p id="cart-empty" class="cart-empty">Tu carrito esta vacio.</p>
+          <div class="total-line">
+            <span>Total</span>
+            <strong id="cart-total">$0</strong>
+          </div>
+          <div class="customer-fields">
+            <label for="customer-name">Tu nombre</label>
+            <input id="customer-name" type="text" placeholder="Ej: Camila">
+            <label for="customer-address">Direccion o punto de entrega</label>
+            <input id="customer-address" type="text" placeholder="Ej: Kennedy Central">
+            <label for="customer-notes">Notas del pedido</label>
+            <textarea id="customer-notes" rows="2" placeholder="Sin crema, con extra de fresa..."></textarea>
+          </div>
+          <p class="pay-label">Metodo de pago</p>
+          <div class="pay-methods">
+            <button class="pay-chip active" data-method="Nequi">Nequi</button>
+            <button class="pay-chip" data-method="Daviplata">Daviplata</button>
+            <button class="pay-chip" data-method="Efectivo">Efectivo contra entrega</button>
+          </div>
+          <p id="active-method" class="method-status">Metodo: Nequi</p>
+          <a id="pay-whatsapp" class="btn btn-block" href="https://wa.me/573216567202" target="_blank" rel="noopener">
+            Ir a pagar por WhatsApp
+          </a>
+          <button id="clear-cart" class="mini-link" type="button">Vaciar carrito</button>
+        </aside>
+      </div>
+      <p class="note">
+        Este checkout es una pasarela tipo demo orientada a conversion por chat.
+      </p>
+    </section>
+
+    <section id="promos" class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">Promociones</p>
+        <h2>Promos que disparan recompra y recomendacion</h2>
+      </div>
+      <div class="promo-grid stagger">
+        <article class="promo-card">
+          <p class="promo-tag">Tarjeta Sellada</p>
+          <h3>Llena tu tarjeta y reclama gratis tu postre preferido</h3>
+          <p class="promo-copy">Por cada compra te sellamos 1 casilla. Con 8 sellos recibes un postre gratis a eleccion.</p>
+          <strong class="promo-price">Programa fidelidad activo</strong>
+          <div class="promo-actions">
+            <button class="add-btn" type="button" data-offer-item="ensalada-frutas" data-offer-price="1">Empezar a sellar</button>
+            <button class="add-btn" type="button" data-offer-item="fresas-crema" data-offer-price="0">Postre recomendado</button>
+          </div>
+        </article>
+        <article class="promo-card">
+          <p class="promo-tag">Cumpleanos</p>
+          <h3>En tu cumpleanos tienes postre sorpresa gratis</h3>
+          <p class="promo-copy">Presentando documento y comprando combo cumpleanero recibes topping premium o postre especial gratis.</p>
+          <strong class="promo-price">Desde $29.000</strong>
+          <div class="promo-actions">
+            <button class="add-btn" type="button" data-offer-item="banana-split" data-offer-price="1">Combo cumple</button>
+            <button class="add-btn" type="button" data-offer-item="waffle-ice" data-offer-price="0">Postre sorpresa</button>
+          </div>
+        </article>
+        <article class="promo-card">
+          <p class="promo-tag">Combo Familiar</p>
+          <h3>4 ensaladas + 2 raspados para compartir</h3>
+          <p class="promo-copy">Perfecto para hogares y reuniones. Alto valor percibido y excelente margen por volumen.</p>
+          <strong class="promo-price">$59.000</strong>
+          <div class="promo-actions">
+            <button class="add-btn" type="button" data-offer-item="ensalada-frutas" data-offer-price="2">Agregar ensalada</button>
+            <button class="add-btn" type="button" data-offer-item="raspado" data-offer-price="1">Agregar raspado</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section split reveal">
+      <div>
+        <p class="eyebrow">Experiencia</p>
+        <h2>No solo vendemos frutas, vendemos energia.</h2>
+        <p>
+          Concepto visual inspirado en color, frescura y movimiento.
+          Ideal para atraer clientes desde celular y convertir visitas en pedidos.
+        </p>
+        <ul class="bullet-list">
+          <li>Pedido rapido por WhatsApp</li>
+          <li>Diseno enfocado en conversion</li>
+          <li>Identidad tropical diferente</li>
+        </ul>
+      </div>
+      <div class="glass-panel">
+        <p class="label">Estado del local</p>
+        <p id="open-status" class="open-status">Consultando horario...</p>
+        <div class="hours-list">
+          <p><span>Lunes a Viernes</span><span>9:00 AM - 9:00 PM</span></p>
+          <p><span>Sabado y Domingo</span><span>10:00 AM - 9:00 PM</span></p>
+        </div>
+        <a class="btn btn-block" href="https://wa.me/573216567202" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      </div>
+    </section>
+
+    <section id="resenas" class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">Prueba social</p>
+        <h2>Clientes que ya recomiendan Cholados Ice</h2>
+      </div>
+      <div class="review-grid stagger">
+        <article class="review-card">
+          <p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class="review-text">"El pedido llego rapido y super fresco. Volvemos a pedir cada semana."</p>
+          <p class="review-author">Camila R. - Kennedy</p>
+        </article>
+        <article class="review-card">
+          <p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class="review-text">"La ensalada premium es brutal. Muy buena porcion y sabor."</p>
+          <p class="review-author">Jhon M. - Castilla</p>
+        </article>
+        <article class="review-card">
+          <p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+          <p class="review-text">"Nos encantaron los combos familiares, excelente para reuniones."</p>
+          <p class="review-author">Laura T. - Patio Bonito</p>
+        </article>
+      </div>
+      <div class="section-link-row">
+        <a class="btn btn-ghost" href="resenas.html">Ver pagina completa de resenas</a>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">Galeria visual</p>
+        <h2>Una marca que se ve tan bien como sabe</h2>
+      </div>
+      <div class="image-grid stagger">
+        <article class="image-tile">
+          <img src="img/galeria-1.jpg" alt="Ensalada de frutas fresca">
+        </article>
+        <article class="image-tile">
+          <img src="img/galeria-2.jpg" alt="Postre con frutas y crema">
+        </article>
+        <article class="image-tile">
+          <img src="img/galeria-3.jpg" alt="Bowl colorido de frutas">
+        </article>
+        <article class="image-tile">
+          <img src="img/galeria-4.jpg" alt="Bebida tropical refrescante">
+        </article>
+      </div>
+      <div class="section-link-row">
+        <a class="btn" href="galeria.html">Abrir galeria completa</a>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">Canales extra</p>
+        <h2>Contenido y paquetes para vender mas</h2>
+      </div>
+      <div class="blog-grid stagger">
+        <article class="blog-card">
+          <img src="img/galeria-5.jpg" alt="Contenido blog de frutas">
+          <div class="blog-content">
+            <p class="blog-meta">Blog comercial</p>
+            <h3>Articulos para atraer trafico y convertir mas pedidos</h3>
+            <p>Publicaciones pensadas para SEO local y para reforzar marca en redes sociales.</p>
+            <a class="btn btn-ghost" href="blog.html">Abrir blog</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <img src="img/galeria-6.jpg" alt="Mesa en evento corporativo">
+          <div class="blog-content">
+            <p class="blog-meta">Eventos por volumen</p>
+            <h3>Planes para cumpleanos, empresas y activaciones</h3>
+            <p>Paquetes listos para cotizar por WhatsApp con flujo rapido de cierre.</p>
+            <a class="btn btn-ghost" href="eventos.html">Ver eventos</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq" class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2>Todo claro antes de pedir</h2>
+      </div>
+      <div class="faq-wrap">
+        <details class="faq-item">
+          <summary>Como hago un pedido rapido?</summary>
+          <p>Escoge productos, completa tus datos en checkout y presiona "Ir a pagar por WhatsApp".</p>
+        </details>
+        <details class="faq-item">
+          <summary>Que medios de pago reciben?</summary>
+          <p>Nequi, Daviplata y efectivo contra entrega segun zona de cobertura.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Cuanto demora la entrega?</summary>
+          <p>Promedio de 20 a 35 minutos en Kennedy y zonas cercanas, sujeto a demanda.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Puedo personalizar la ensalada?</summary>
+          <p>Si. Deja tus preferencias en el campo de notas al momento de confirmar el pedido.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="ubicacion" class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">Ubicacion</p>
+        <h2>Estamos listos para tu proximo antojo</h2>
+      </div>
+      <div class="location-grid">
+        <article class="location-card">
+          <p><strong>Negocio:</strong> Cholados Ice</p>
+          <p><strong>Ciudad:</strong> Bogota, Colombia</p>
+          <p><strong>Zona:</strong> Localidad Kennedy</p>
+          <p><strong>Direccion:</strong> Cl. 2 # 80i-49 (segun ficha publica)</p>
+          <p><strong>Telefono:</strong> +57 321 6567202</p>
+          <a class="btn btn-ghost btn-block" href="https://google.com/maps/place/Cholados+Ice/@4.6412122,-74.1614144,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f9c3087f5a46d:0x9c9e348e3576d49e!8m2!3d4.641209!4d-74.1598833!16s%2Fg%2F11j1309bt7?entry=ttu&g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Abrir en Google Maps</a>
+        </article>
+        <div class="map-wrap">
+          <iframe
+            title="Mapa de Cholados Ice"
+            loading="lazy"
+            allowfullscreen
+            src="https://www.google.com/maps?q=Cholados+Ice+Bogota&ll=4.641209,-74.1598833&z=17&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="closing-cta">
+        <p class="eyebrow">Listo para vender hoy</p>
+        <h2>Haz tu pedido en 1 minuto y recibe atencion inmediata</h2>
+        <p>Esta web ya esta optimizada para conversion por WhatsApp y puede evolucionar a pasarela real.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#menu">Pedir ahora</a>
+          <a class="btn btn-ghost" href="https://wa.me/573216567202" target="_blank" rel="noopener">Hablar con asesor</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Cholados Ice - Sitio demo innovador para ventas web</p>
+    <p id="year"></p>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/573216567202" target="_blank" rel="noopener" aria-label="Chatear por WhatsApp">
+    WhatsApp
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

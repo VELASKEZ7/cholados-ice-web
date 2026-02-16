@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Cholados Ice</title>
+  <meta name="description" content="Contacto de Cholados Ice: pedidos, eventos y alianzas comerciales.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-orb bg-orb-a"></div>
+  <div class="bg-orb bg-orb-b"></div>
+  <div class="bg-grid"></div>
+
+  <header class="header">
+    <a href="index.html" class="brand">CHOLADOS ICE</a>
+    <nav class="nav">
+      <a href="index.html#menu">Menu</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="resenas.html">Resenas</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#ubicacion">Ubicacion</a>
+    </nav>
+    <a class="btn btn-small" href="https://wa.me/573216567202" target="_blank" rel="noopener">Pedir ahora</a>
+  </header>
+
+  <main>
+    <section class="hero reveal page-hero">
+      <div class="hero-text">
+        <p class="hero-kicker">Atencion directa</p>
+        <h1>Contacto comercial, pedidos y eventos en un solo lugar.</h1>
+        <p class="hero-copy">Completa el formulario y abrimos el chat con tu solicitud ya estructurada.</p>
+      </div>
+      <div class="score-board">
+        <p class="score-value">+57 321 656 7202</p>
+        <p class="score-caption">Canal principal para pedidos y seguimiento rapido por WhatsApp.</p>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="contact-layout">
+        <article class="contact-card">
+          <h2>Escribe tu solicitud</h2>
+          <p>Te respondemos con disponibilidad, tiempos y valor final.</p>
+          <form id="contact-form" class="contact-form">
+            <label for="contact-name">Nombre</label>
+            <input id="contact-name" name="name" type="text" required placeholder="Ej: Andrea Ruiz">
+
+            <label for="contact-phone">Telefono</label>
+            <input id="contact-phone" name="phone" type="tel" required placeholder="Ej: 3001234567">
+
+            <label for="contact-type">Tipo de solicitud</label>
+            <select id="contact-type" name="type" required>
+              <option value="">Selecciona una opcion</option>
+              <option value="Pedido inmediato">Pedido inmediato</option>
+              <option value="Pedido programado">Pedido programado</option>
+              <option value="Evento o volumen">Evento o volumen</option>
+              <option value="Alianza comercial">Alianza comercial</option>
+            </select>
+
+            <label for="contact-zone">Zona de entrega</label>
+            <input id="contact-zone" name="zone" type="text" placeholder="Ej: Kennedy, Castilla, Tintal">
+
+            <label for="contact-message">Detalle del pedido</label>
+            <textarea id="contact-message" name="message" rows="4" required placeholder="Cuantos productos quieres, horario y detalles especiales..."></textarea>
+
+            <button class="btn btn-block" type="submit">Enviar por WhatsApp</button>
+          </form>
+        </article>
+
+        <article class="contact-card side">
+          <h3>Canales activos</h3>
+          <ul class="contact-list">
+            <li><strong>WhatsApp:</strong> +57 321 656 7202</li>
+            <li><strong>Llamadas:</strong> 9:00 AM - 9:00 PM</li>
+            <li><strong>Zona:</strong> Kennedy y sectores cercanos</li>
+            <li><strong>Atencion:</strong> Lunes a Domingo</li>
+          </ul>
+
+          <h3>FAQ rapido de pedidos</h3>
+          <div class="faq-wrap">
+            <details class="faq-item">
+              <summary>Atienden eventos?</summary>
+              <p>Si, manejamos pedidos por volumen para reuniones, celebraciones y empresas.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Puedo dejar pago anticipado?</summary>
+              <p>Si, te compartimos opciones por Nequi o Daviplata al confirmar el pedido.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Hacen pedidos personalizados?</summary>
+              <p>Si, puedes ajustar ingredientes y toppings en el mensaje.</p>
+            </details>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="closing-cta">
+        <p class="eyebrow">Respuesta rapida</p>
+        <h2>Mientras mas claro tu mensaje, mas rapido confirmamos</h2>
+        <p>Este flujo reduce tiempos y acelera cierre de pedidos y eventos.</p>
+        <div class="hero-cta">
+          <a class="btn" href="index.html#menu">Comprar ahora</a>
+          <a class="btn btn-ghost" href="nosotros.html">Conocer la marca</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Cholados Ice - Contacto</p>
+    <p id="year"></p>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/573216567202" target="_blank" rel="noopener" aria-label="Chatear por WhatsApp">WhatsApp</a>
+  <script src="site.js"></script>
+</body>
+</html>
+
+
