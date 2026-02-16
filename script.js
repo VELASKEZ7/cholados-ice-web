@@ -164,6 +164,11 @@ const observer = new IntersectionObserver(
 );
 revealNodes.forEach((node) => observer.observe(node));
 
+// The product grid should be visible immediately on load, even before scrolling.
+if (menuItemsNode) {
+  menuItemsNode.classList.add("in-view");
+}
+
 function formatCOP(value) {
   return new Intl.NumberFormat("es-CO", {
     style: "currency",
