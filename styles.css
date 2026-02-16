@@ -67,9 +67,11 @@ body {
 
 .header {
   width: min(1100px, calc(100% - 32px));
-  margin: 16px auto 0;
-  position: sticky;
+  margin: 0 auto;
+  position: fixed;
   top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -142,7 +144,7 @@ body {
 
 main {
   width: min(1100px, calc(100% - 32px));
-  margin: 14px auto 56px;
+  margin: 98px auto 56px;
 }
 
 .hero {

@@ -160,7 +160,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.2 }
+  { threshold: 0.05, rootMargin: "0px 0px -8% 0px" }
 );
 revealNodes.forEach((node) => observer.observe(node));
 
@@ -467,3 +467,4 @@ hydrateState();
 syncPaymentUI();
 renderMenu();
 renderCart();
+

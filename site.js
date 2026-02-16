@@ -9,7 +9,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.15 }
+  { threshold: 0.05, rootMargin: "0px 0px -8% 0px" }
 );
 
 revealNodes.forEach((node) => observer.observe(node));
@@ -66,3 +66,4 @@ if (contactForm instanceof HTMLFormElement) {
     notify("Mensaje listo. Te llevamos a WhatsApp.");
   });
 }
+
